@@ -1,0 +1,38 @@
+.information {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    padding: 20px;
+    
+}
+.welcome, .contact-us {
+    width: 650px; /* or 48% to leave space between */
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.6;
+    top: 1000px;
+    display:inline-block;
+    vertical-align: top;
+}
+a i {
+    margin: 15px;
+    color:  #333; /* Default color */
+    transition: 0.3s;
+    
+}
+
+a i:hover {
+    color: #1222b6; /* Blue on hover */
+}
+
+.contact-us {
+    border-left: 3px, solid, black ;
+}
+.facebook{
+    width: 60px;
+    
+    
+            
+}

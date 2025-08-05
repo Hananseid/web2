@@ -1,0 +1,42 @@
+.header{
+    position: absolute;
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-between; /* Or use center/space-around */
+    background: transparent; /* Or any background you like */
+    top: 10px;
+    left: 35px;
+    right:35px;
+    flex-wrap: wrap;
+}
+.home-page .header {
+    background: transparent;
+    color: black;
+    
+}
+
+.main-page .header {
+    background: transparent;
+    color: white;
+}
+
+   
+
+
+.nav-link {
+    text-decoration: none;
+    font-size: 25px;
+    
+}
+.home-page .nav-link {
+    color: black;
+}
+
+.main-page .nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: rgb(228, 225, 225); /* Optional hover effect */
+}
