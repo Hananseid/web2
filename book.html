@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>Grand Han Hotel - Hotel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .main-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .slideshow {
+            width: 900px;
+            height: 600px;
+            background-size: cover;
+            background-position: center;
+            animation: slideShow 20s infinite;
+            margin-top: 10px;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+
+        @keyframes slideShow {
+        0%   { background-image: url('pic/bed.webp'); }
+        10%  { background-image: url('pic/bed2.jpg'); }
+        20%  { background-image: url('pic/bed3.jpg'); }
+        30%  { background-image: url('pic/bed4.webp'); }
+        40% { background-image: url('pic/bed5.webp'); }
+        50% { background-image: url('pic/bed6.webp'); }
+        60% { background-image: url('pic/onebed.jpg'); }
+        70%  { background-image: url('pic/standqueen.jpg'); }
+        80% { background-image: url('pic/onebedking.jpg'); }
+        90% { background-image: url('pic/stndking.jpg'); }
+        100% { background-image: url('pic/bed8.webp'); }
+        }
+
+        .home1 {
+            max-width: 300px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        form input {
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        label {
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #b8860b;
+            color: white;
+            border: none;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #a6730a;
+        }
+    </style>
+</head>
+<body class="home-page">
+    <div class="header "> 
+        <a class="nav-link" href="home.html">HOME</a>
+        <a class="nav-link" href="RESTAURANT.html">RESTAURANT & BAR</a>
+        <a class="nav-link" href="MEETINGS.html">MEETINGS & CONFERENCES</a>
+        <a class="nav-link" href="fitness.html">FITNESS</a>
+        <a class="nav-link" href="beauty.html">BEAUTY</a>
+        <a class="nav-link" href="pool.html">SWIMMING POOL</a>
+        <a class="nav-link" href="book.html">BOOK NOW</a>
+    </div> 
+    <div class="main-section">
+        <div class="slideshow"></div>
+        <div class="home1"> 
+            <form action="available-rooms.html" method="get">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Olivia">
+
+                <label for="mname">Middle Name:</label> 
+                <input type="text" id="mname" name="mname" placeholder="Bennett">
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Grace">
+
+                <label for="checkin">Check In:</label> 
+                <input type="text" id="checkin" name="checkin" placeholder="">
+
+                <label for="checkout">Check Out:</label> 
+                <input type="text" id="checkout" name="checkout" placeholder="">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="olivia.bennett94@gmail.com">
+
+                <button type="submit">Check Availability</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const today = new Date();
+        const tomorrow = new Date(today);
+        tomorrow.setDate(today.getDate() + 1);
+
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+
+        document.getElementById('checkin').placeholder = today.toLocaleDateString('en-US', options);
+        document.getElementById('checkout').placeholder = tomorrow.toLocaleDateString('en-US', options);
+    </script>
+</body>
+</html>
+
