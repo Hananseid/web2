@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Grand Han Hotel - Hotel</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/general.css">
-        <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
-        <style>
-            .main-section {
-                display: flex;
-                align-items: flex-start;
-                gap: 30px;
-                padding: 20px;
-            }
-            .slideshow {
+
+<head>
+    <title>Grand Han Hotel - Hotel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .main-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .slideshow {
             width: 1300px;
             height: 600px;
             background-size: cover;
@@ -23,73 +27,116 @@
             animation: slideShow 30s infinite;
             margin-top: 10px;
             border-radius: 10px;
+        }
+
+        @keyframes slideShow {
+            0% {
+                background-image: url('pic/pic1.webp');
             }
 
-            @keyframes slideShow {
-            0%    { background-image: url('pic/pic1.webp'); }
-            10%   { background-image: url('pic/pic12.jpg'); }
-            20%   { background-image: url('pic/pic3.jpg'); }
-            30%   { background-image: url('pic/pic4.jpg'); }
-            40%   { background-image: url('pic/pic15.jpg'); }
-            50%   { background-image: url('pic/pic6.jpg'); }
-            60%   { background-image: url('pic/pic7.avif'); }
-            70%   { background-image: url('pic/pic8.webp'); }
-            80%   { background-image: url('pic/pic9.jpg'); }
-            90%   { background-image: url('pic/pic10.webp'); }
-            100%  { background-image: url('pic/pic1.webp'); } 
-            }
-            .home1{
-                font-size: 20px;
-                line-height: 1.6;
-                margin-top: 100px;
+            10% {
+                background-image: url('pic/pic12.jpg');
             }
 
-        </style>
-    </head>
-    <body class="home-page">
-        <div class="header "> 
-            <a class="nav-link" href="home.html">HOME</a>
-            <a class="nav-link" href="RESTAURANT.html">RESTAURANT & BAR</a>
-            <a class="nav-link" href="MEETINGS.html">MEETINGS & CONFERENCES</a>
-            <a class="nav-link" href="fitness.html">FITNESS</a>
-            <a class="nav-link" href="beauty.html">BEAUTY</a>
-            <a class="nav-link" href="pool.html">SWIMMING POOL</a>
-            <a class="nav-link" href="book.html">BOOK NOW</a>
-        </div> 
-        <div class="main-section">
-            <div class="slideshow"></div> 
-            <div class="home1" > 
-                <p> At Grand Han Hotel, dining is more than just a meal — it’s an experience.<br> Our on-site restaurant offers a delightful mix of traditional Ethiopian flavors and international cuisine, all freshly prepared by our skilled chefs. <br> Whether you're enjoying a hearty breakfast, a relaxed lunch, or a romantic dinner,<br>  you’ll be served with care in a cozy, elegant setting.
+            20% {
+                background-image: url('pic/pic3.jpg');
+            }
 
-    Looking to unwind? Visit our stylish bar,<br> where you can enjoy a wide selection of wines, cocktails, and local drinks.<br> It's the perfect place to relax after a long day or catch up with friends and colleagues in a comfortable atmosphere.</p>
-            </div>
+            30% {
+                background-image: url('pic/pic4.jpg');
+            }
+
+            40% {
+                background-image: url('pic/pic15.jpg');
+            }
+
+            50% {
+                background-image: url('pic/pic6.jpg');
+            }
+
+            60% {
+                background-image: url('pic/pic7.avif');
+            }
+
+            70% {
+                background-image: url('pic/pic8.webp');
+            }
+
+            80% {
+                background-image: url('pic/pic9.jpg');
+            }
+
+            90% {
+                background-image: url('pic/pic10.webp');
+            }
+
+            100% {
+                background-image: url('pic/pic1.webp');
+            }
+        }
+
+        .home1 {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body class="home-page">
+    <div class="header ">
+        <a class="nav-link" href="hotel.html">HOME</a>
+        <a class="nav-link" href="RESTAURANT.html">RESTAURANT & BAR</a>
+        <a class="nav-link" href="MEETINGS.html">MEETINGS & CONFERENCES</a>
+        <a class="nav-link" href="fitness.html">FITNESS</a>
+        <a class="nav-link" href="beauty.html">BEAUTY</a>
+        <a class="nav-link" href="pool.html">SWIMMING POOL</a>
+        <a class="nav-link" href="home.html">About US</a>
+        <a class="nav-link" href="book.html">BOOK NOW</a>
+    </div>
+    <div class="main-section">
+        <div class="slideshow"></div>
+        <div class="home1">
+            <p> At Grand Han Hotel, dining is more than just a meal — it’s an experience.<br> Our on-site restaurant
+                offers a delightful mix of traditional Ethiopian flavors and international cuisine, all freshly prepared
+                by our skilled chefs. <br> Whether you're enjoying a hearty breakfast, a relaxed lunch, or a romantic
+                dinner,<br> you’ll be served with care in a cozy, elegant setting.
+
+                Looking to unwind? Visit our stylish bar,<br> where you can enjoy a wide selection of wines, cocktails,
+                and local drinks.<br> It's the perfect place to relax after a long day or catch up with friends and
+                colleagues in a comfortable atmosphere.</p>
         </div>
-        <div class="information">
-            <div class="welcome"> 
-                <h1> Welcome to Grand Han Hotel </h1>
-                <p> At Grand Han Hotel, we offer a unique blend of comfort, luxury, and Ethiopian hospitality. Whether you're traveling for business, a family vacation, or a quick weekend escape — our warm environment and modern services ensure your stay is nothing short of excellent.</p>
-                <p style="line-height: 50px;
+    </div>
+    <div class="information">
+        <div class="welcome">
+            <h1> Welcome to Grand Han Hotel </h1>
+            <p> At Grand Han Hotel, we offer a unique blend of comfort, luxury, and Ethiopian hospitality. Whether
+                you're traveling for business, a family vacation, or a quick weekend escape — our warm environment and
+                modern services ensure your stay is nothing short of excellent.</p>
+            <p style="line-height: 50px;
                 ">Copyright &#169; 2023 | Grand Han Hotel All Rights Reserved </p>
-                <div>
-                    <a class="instagram" href="https://instagram.com/GrandHanHotel" target="_blank" >
-                        <i class="fab fa-instagram fa-2x"></i>
-                    </a>
-                    <a class="facebook" href="https://facebook.com/GrandHanHotel" target="_blank"> 
-                        <i class="fa-brands fa-facebook" style="font-size: 37px;"></i>
-                    </a>
+            <div>
+                <a class="instagram" href="https://instagram.com/GrandHanHotel" target="_blank">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a class="facebook" href="https://facebook.com/GrandHanHotel" target="_blank">
+                    <i class="fa-brands fa-facebook" style="font-size: 37px;"></i>
+                </a>
 
-                </div>
-                
             </div>
-            <div class="contact-us">
-                <h1> Contact Us Grand Han Hotel</h1>
-                <p>Reception Hours <br> We are open 24 hours a day, 7 days a week.</p>
-                <p >Hotel Address <br> Grand Han Hotel [Bole medhanalem, Addis Ababa, Ethiopia]</p>
-                <p> Phone Numbers <br>Main: +251 987465675  </p>
-                <p> Email <br> General Inquiries: <a href="malito:info@grandhanhotel.com"> info&#64;grandhanhotel.com </a> </p>
-            </div>
+
         </div>
-        
-  
-    </body>
+        <div class="contact-us">
+            <h1> Contact Us Grand Han Hotel</h1>
+            <p>Reception Hours <br> We are open 24 hours a day, 7 days a week.</p>
+            <p>Hotel Address <br> Grand Han Hotel [Bole medhanalem, Addis Ababa, Ethiopia]</p>
+            <p> Phone Numbers <br>Main: +251 987465675 </p>
+            <p> Email <br> General Inquiries: <a href="malito:info@grandhanhotel.com"> info&#64;grandhanhotel.com </a>
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
 </html>

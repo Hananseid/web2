@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+
+<head>
     <title>Grand Han Hotel - Hotel</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/general.css">
-    
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -32,17 +33,49 @@
         }
 
         @keyframes slideShow {
-        0%   { background-image: url('pic/bed.webp'); }
-        10%  { background-image: url('pic/bed2.jpg'); }
-        20%  { background-image: url('pic/bed3.jpg'); }
-        30%  { background-image: url('pic/bed4.webp'); }
-        40% { background-image: url('pic/bed5.webp'); }
-        50% { background-image: url('pic/bed6.webp'); }
-        60% { background-image: url('pic/onebed.jpg'); }
-        70%  { background-image: url('pic/standqueen.jpg'); }
-        80% { background-image: url('pic/onebedking.jpg'); }
-        90% { background-image: url('pic/stndking.jpg'); }
-        100% { background-image: url('pic/bed8.webp'); }
+            0% {
+                background-image: url('pic/bed.webp');
+            }
+
+            10% {
+                background-image: url('pic/bed2.jpg');
+            }
+
+            20% {
+                background-image: url('pic/bed3.jpg');
+            }
+
+            30% {
+                background-image: url('pic/bed4.webp');
+            }
+
+            40% {
+                background-image: url('pic/bed5.webp');
+            }
+
+            50% {
+                background-image: url('pic/bed6.webp');
+            }
+
+            60% {
+                background-image: url('pic/onebed.jpg');
+            }
+
+            70% {
+                background-image: url('pic/standqueen.jpg');
+            }
+
+            80% {
+                background-image: url('pic/onebedking.jpg');
+            }
+
+            90% {
+                background-image: url('pic/stndking.jpg');
+            }
+
+            100% {
+                background-image: url('pic/bed8.webp');
+            }
         }
 
         .home1 {
@@ -50,7 +83,7 @@
             background-color: white;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
         }
 
@@ -88,33 +121,36 @@
         }
     </style>
 </head>
+
 <body class="home-page">
-    <div class="header "> 
-        <a class="nav-link" href="home.html">HOME</a>
+    <div class="header ">
+        <a class="nav-link" href="hotel.html">HOME</a>
         <a class="nav-link" href="RESTAURANT.html">RESTAURANT & BAR</a>
         <a class="nav-link" href="MEETINGS.html">MEETINGS & CONFERENCES</a>
         <a class="nav-link" href="fitness.html">FITNESS</a>
         <a class="nav-link" href="beauty.html">BEAUTY</a>
         <a class="nav-link" href="pool.html">SWIMMING POOL</a>
+
+        <a class="nav-link" href="home.html">About US</a>
         <a class="nav-link" href="book.html">BOOK NOW</a>
-    </div> 
+    </div>
     <div class="main-section">
         <div class="slideshow"></div>
-        <div class="home1"> 
+        <div class="home1">
             <form action="available-rooms.html" method="get">
                 <label for="fname">First Name:</label>
                 <input type="text" id="fname" name="fname" placeholder="Olivia">
 
-                <label for="mname">Middle Name:</label> 
+                <label for="mname">Middle Name:</label>
                 <input type="text" id="mname" name="mname" placeholder="Bennett">
 
                 <label for="lname">Last Name:</label>
                 <input type="text" id="lname" name="lname" placeholder="Grace">
 
-                <label for="checkin">Check In:</label> 
+                <label for="checkin">Check In:</label>
                 <input type="text" id="checkin" name="checkin" placeholder="">
 
-                <label for="checkout">Check Out:</label> 
+                <label for="checkout">Check Out:</label>
                 <input type="text" id="checkout" name="checkout" placeholder="">
 
                 <label for="email">Email:</label>
@@ -125,7 +161,7 @@
         </div>
     </div>
 
-    <script>
+    <script src="script.js">
         const today = new Date();
         const tomorrow = new Date(today);
         tomorrow.setDate(today.getDate() + 1);
@@ -136,5 +172,5 @@
         document.getElementById('checkout').placeholder = tomorrow.toLocaleDateString('en-US', options);
     </script>
 </body>
-</html>
 
+</html>

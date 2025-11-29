@@ -1,131 +1,138 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title>Grand Han Hotel - Hotel</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/general.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <style>
-            #thankYouMsg {
-                display: none;
-                font-size: 20px;
-                color: rgb(206, 144, 115);
-                margin-top: 20px;
-                font-weight: bold;
-            }
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #f5f5f5;
-                padding: 20px;
-            }
-            .contenitore {
-                background-color: white;
-                max-width: 800px;
-                height: 400px;
-                margin: auto;
-                padding: 25px;
-                border-radius: 10px;
-                box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            }
+<head>
+    <title>Grand Han Hotel - Hotel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #thankYouMsg {
+            display: none;
+            font-size: 20px;
+            color: rgb(206, 144, 115);
+            margin-top: 20px;
+            font-weight: bold;
+        }
 
-            .han {
-                font-size: 28px;
-                color: #000000;
-                font-weight: bold;
-                margin-bottom: 20px;
-            }
-            label {
-                font-size: 16px;
-                color: #686565;
-                font-weight: bold;
-                margin-top: 15px;
-                display: block;
-            }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
 
+        .contenitore {
+            background-color: white;
+            max-width: 800px;
+            height: 400px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-            input[type="text"], select {
-                margin-bottom: 10px;
-                padding: 10px;
-                width: 90%;
-                font-size: 16px;
-                border: 1px solid #ccc;
-                border-radius: 8px;
-                outline: none;
-            }
+        .han {
+            font-size: 28px;
+            color: #000000;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
 
-            .cn-conteiner input {
-                width: 18%;
-                display: inline-block;
-                margin-right: 2%;
-            }
-
-            .btn-submit {
-                width: 100%;
-                padding: 12px;
-                background-color: #b8860b;
-                color: white;
-                border: none;
-                font-weight: bold;
-                border-radius: 8px;
-                cursor: pointer;
-                margin-top: 15px;
-            }
-
-            .btn-submit:hover {
-                background-color: #a6730a;
-            }
+        label {
+            font-size: 16px;
+            color: #686565;
+            font-weight: bold;
+            margin-top: 15px;
+            display: block;
+        }
 
 
-        </style>
-    </head>
-    <body id="credit-card-data">
-        <div class="contenitore">
-            <form method="post" action id="form_salvataggio_prenotazione" onsubmit="event.preventDefault(); document.getElementById('thankYouMsg').style.display = 'block'; this.reset();">
-               <div class="han">Credit card details</div>
-               <div class="table"> 
-                    <div class="ct-conteiner"> 
-                        <label for="CardType">Type:</label>
-                        <select size="1" name="CardType" id="CardType">
-                            <option value="MasterCard">MasterCard</option>
-                            <option value="VisaCard">Visa</option>
-                            <option value="AmExCard">American Express</option>
-                        </select>
-                    
+        input[type="text"],
+        select {
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 90%;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+        }
 
-                    </div>
-                    <div class="cn-conteiner">
-                        <label for="CardNumber">Card number*:</label>
-                        <input type="text" name="CardNumber1" id="CardNumber1" maxlength="4" size="3" class="autotab">
-                        <input type="text" name="CardNumber2" id="CardNumber2" maxlength="4" size="3" class="autotab">
-                        <input type="text" name="CardNumber3" id="CardNumber3" maxlength="4" size="3" class="autotab">
-                        <input type="text" name="CardNumber4" id="CardNumber4" maxlength="7" size="7" class="autotab">
-                    </div>
-                   
+        .cn-conteiner input {
+            width: 18%;
+            display: inline-block;
+            margin-right: 2%;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 12px;
+            background-color: #b8860b;
+            color: white;
+            border: none;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .btn-submit:hover {
+            background-color: #a6730a;
+        }
+    </style>
+</head>
+
+<body id="credit-card-data">
+    <div class="contenitore">
+        <form method="post" action id="form_salvataggio_prenotazione"
+            onsubmit="event.preventDefault(); document.getElementById('thankYouMsg').style.display = 'block'; this.reset();">
+            <div class="han">Credit card details</div>
+            <div class="table">
+                <div class="ct-conteiner">
+                    <label for="CardType">Type:</label>
+                    <select size="1" name="CardType" id="CardType">
+                        <option value="MasterCard">MasterCard</option>
+                        <option value="VisaCard">Visa</option>
+                        <option value="AmExCard">American Express</option>
+                    </select>
 
 
-                    </div>
-                    <div class="ch-conteiner">
-                        <label for="CardHolder">Card holder*:</label>
-                        <input type="text" name="CardHolder" id="CardHolder" size="30">
-                    </div>
-                    <button class="btn-submit" type="submit">Confirm Payment</button>
-                    
-                
-               </div>
-               
-            
-            </form>
-        </div>
-        <div id="thankYouMsg" style="display: none; font-size: 18px; color: rgb(206, 156, 81); margin-top: 20px;">
-             Thank you for choosing us! Your payment has been received.
-        </div>
-        <div id="thankYouMsg" style="display: none; font-size: 18px; color: rgb(206, 156, 81); margin-top: 20px;" >
-           Thank you for choosing us! Your payment has been received.
-        </div>
+                </div>
+                <div class="cn-conteiner">
+                    <label for="CardNumber">Card number*:</label>
+                    <input type="text" name="CardNumber1" id="CardNumber1" maxlength="4" size="3" class="autotab">
+                    <input type="text" name="CardNumber2" id="CardNumber2" maxlength="4" size="3" class="autotab">
+                    <input type="text" name="CardNumber3" id="CardNumber3" maxlength="4" size="3" class="autotab">
+                    <input type="text" name="CardNumber4" id="CardNumber4" maxlength="7" size="7" class="autotab">
+                </div>
 
 
-    </body>
+
+            </div>
+            <div class="ch-conteiner">
+                <label for="CardHolder">Card holder*:</label>
+                <input type="text" name="CardHolder" id="CardHolder" size="30">
+            </div>
+            <button class="btn-submit" type="submit">Confirm Payment</button>
+
+
+    </div>
+
+
+    </form>
+    </div>
+    <div id="thankYouMsg" style="display: none; font-size: 18px; color: rgb(206, 156, 81); margin-top: 20px;">
+        Thank you for choosing us! Your payment has been received.
+    </div>
+    <div id="thankYouMsg" style="display: none; font-size: 18px; color: rgb(206, 156, 81); margin-top: 20px;">
+        Thank you for choosing us! Your payment has been received.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
